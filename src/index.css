@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;1,100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,800;1,800&display=swap');
+
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-space-item button{
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  border: none;
+  font-family: 'work sans';
+  font-size: 24px;
+  font-weight: 400;
+  color: black !important;
+  box-shadow: none;
+
+}
+.jumpTorecipe .ant-space-item button{
+  background-color: #04471c;
+  padding: 10px;
+  color:#ffff !important;
+  font-size: 16px !important;
+  font-weight: 200px !important;
+  height: 50px;
+}
+.jumpTorecipe .ant-space-item button:hover{
+  border: 1px solid gray !important;
+} 
+.ant-space-item button:hover{
+  color: black !important;
+}
+p span{
+  color: #4ce381;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  transition: 1s;
+}
+.menu.active {
+  left: 0;
+}
+.menu2 {
+  position: fixed;
+  top: 10%;
+  right: -100%;
+  height: 100vh;
+}
+.menu2.active {
+  right: 50%;
+}
+.slick-dots li button:before {
+  opacity: 0 !important;
+  color: black;
+  margin-top: 10px !important;
+
+}
+.slick-dots li.slick-active button:before {
+  opacity: .75 !important;
+  color: black;
+  
+}
+
+.slick-dots li button::before {
+  background-color: black !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+  
+}
+.slick-dots button{
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #000;
+  background-color: inherit !important;
+  border-radius: 50% !important;
+  padding: 5px !important;
+  border: 1px solid rgb(151, 146, 146) !important;
+  margin-top: 10px !important;
+}
+.slick-track{
+  height: 500px !important;
+}
+@media screen and (max-width:768px) {
+  .slick-track{
+    height: unset !important;
+  }
+  .slick-dots li button:before,
+  .slick-dots button {
+    margin-top: unset !important;
+  
+  }
+}
